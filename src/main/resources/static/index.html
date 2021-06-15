@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <title>Demo Project</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/sweetalert2/sweetalert2.min.css">
+    <link rel="stylesheet" href="assets/datatables/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="assets/datatables/datatables.bootstrap.min.css">
+    <link rel="stylesheet" href="assets/datatables/extensions/ColReorder/css/dataTables.colReorder.min.css">
+    <link rel="stylesheet" href="assets/datatables/extensions/Responsive/css/dataTables.responsive.css">
+    <link rel="stylesheet" href="assets/datatables/extensions/ColVis/css/dataTables.colVis.min.css">
+    <link rel="stylesheet" href="assets/datatables/extensions/TableTools/css/dataTables.tableTools.min.css">
+    <link rel="stylesheet" href="assets/toastr/toastr.min.css">
+    <!-- project main css files -->
+  </head>
+  <body class="bg-light">
+    <div class="container"><br>
+      <div class="card border-primary mb-3">
+         <div class="card-header bg-transparent border-primary"><b>Contact Details</b></div>
+         <div class="card-body"  id="card_id">
+           <form class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label"><b>First Name</b></label>
+                <input type="hidden" class="form-control" id="id">
+                <input type="text" class="form-control" id="firstname">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label"><b>Last Name</b></label>
+                <input type="text" class="form-control" id="lastname">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label"><b>Email</b></label>
+                <input type="email" class="form-control" id="email">
+              </div>
+              <div class="col-md-6">
+                <label class="form-label"><b>Phone Number</b></label>
+                <input type="text" class="form-control" id="mobile">
+              </div>
+              <div class="col-md-6">
+                <button type="button" class="btn btn-primary btn-sm"  id="save_id"><b>Save</b></button>
+                <button type="button" class="btn btn-primary btn-sm"  id="reset_id"><b>Reset</b></button>
+              </div>
+            </form>
+       </div>
+       <div class="card-footer bg-transparent border-primary">
+          <div class="bd-example">
+              <table class="table table-bordered table-hover"  id="table_id">
+                  <thead>
+                     <tr>
+			            <th >SrNo</th>
+			            <th>First Name</th>
+			            <th>Last Name</th>
+			            <th>Email</th>
+			            <th>Phone Number</th>
+			            <th>Status</th>
+			            <th>Action</th>
+                   </tr>
+                 </thead>
+            </table>
+        </div>
+       </div>
+      </div>
+     </div>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/jquery/jquery-1.11.2.min.js"></script>
+    <script src="assets/loading/js/loadingoverlay.min.js"></script>
+    <script src="assets/sweetalert2/sweetalert2.min.js"></script>
+    <script src="assets/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="assets/datatables/extensions/ColReorder/js/dataTables.colReorder.min.js"></script>
+    <script src="assets/datatables/extensions/Responsive/js/dataTables.responsive.min.js"></script>
+    <script src="assets/datatables/extensions/ColVis/js/dataTables.colVis.min.js"></script>
+    <script src="assets/datatables/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
+    <script src="assets/datatables/extensions/dataTables.bootstrap.js"></script>
+    <script src="assets/toastr/toastr.min.js"></script>
+    <script src="contact.js"></script>
+    <script src="contactService.js"></script>
+  </body>
+</html>
